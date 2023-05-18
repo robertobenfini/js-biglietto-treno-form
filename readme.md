@@ -22,5 +22,11 @@ milestone 1:
 4.se l'età è <18 applicare lo sconto del 20%
 5.se l'età è >=65 applicare lo sconto del 40%
 6.altrimenti applicare il prezzo pieno
-7.far visualizzare il prezzo con massimo 2 numeri decimali
+7.far visualizzare il prezzo nella console
 8-creare il bottone "genera" per avere il prezzo finale
+
+milestone 2:
+9.chiedere il nome e cognome
+10.creare un form con i dati
+11.aggiungere bottone annulla
+12.stampare il recap dei dati con il prezzo con il .tofixed
