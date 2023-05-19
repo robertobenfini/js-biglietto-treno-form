@@ -16,20 +16,25 @@ button.addEventListener('click', function(){
     //input km da percorrere
     let input_km = parseInt (document.getElementById('km').value);  
 
+    //controllo km
+    if ((isNaN(input_km)) || (input_km <= 0)) {
+        alert('Inserisci solo numeri sopra lo zero');
+    }
+
     //prezzo minorenni
-    if (input_eta === 2 && km > 0) {
+    else if (input_eta === 2) {
         let prezzo_minorenni = input_km * prezzo_km * 0.8;
         document.getElementById('prezzo_finale').innerHTML = ((prezzo_minorenni).toFixed(2))+'€';
     }
 
     //prezzo over 65
-    else if (input_eta === 3 && km > 0) {
+    else if (input_eta === 3) {
         let prezzo_65 = input_km * prezzo_km * 0.6;
         document.getElementById('prezzo_finale').innerHTML = ((prezzo_65).toFixed(2))+'€';
     }
 
     //prezzo pieno
-    else if (input_eta === 1 && km > 0){ 
+    else{ 
         let prezzo_biglietto_intero = input_km * prezzo_km;
         document.getElementById('prezzo_finale').innerHTML = ((prezzo_biglietto_intero).toFixed(2))+'€';
     }
